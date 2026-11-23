@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.124 (w)1999-2025 BSI
+[*] Tue Nov 10 16:11:06 2026
+[*]
+[dumpfile] "build/demo.vcd"
+[dumpfile_mtime] "Tue Nov 10 15:55:36 2026"
+[dumpfile_size] 1997594
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-24.869678 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 280
+[signals_width] 180
+[sst_expanded] 1
+[sst_vpaned_height] 156
+@28
+tb_system.state[3:0]
+tb_system.active
+tb_system.la[2:0]
+tb_system.lb[2:0]
+tb_system.walk
+tb_system.button
+tb_system.pending
+@22
+tb_system.qa[7:0]
+tb_system.qb[7:0]
+tb_system.level_a[1:0]
+tb_system.level_b[1:0]
+tb_system.elapsed[15:0]
+tb_system.remaining[15:0]
+[pattern_trace] 1
+[pattern_trace] 0
