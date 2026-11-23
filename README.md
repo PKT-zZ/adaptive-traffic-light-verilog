@@ -43,6 +43,12 @@ Khi thành công, terminal in `Validated run published: <run-id>`. Xem `build/ru
 3. [Cách demo và nội dung báo cáo tiến độ](docs/DEMO_VA_TIEN_DO.md).
 4. [Kết quả kiểm thử đi kèm bộ nộp](docs/KET_QUA.md). Sau khi chạy lại, xem bảng mới trong `build/KET_QUA.md`.
 
+## Báo cáo và chuẩn bị bảo vệ
+
+- [Báo cáo bài tập lớn (PDF)](bao_cao/Bao_cao_KTMT_mau_Tech.pdf) trình bày thiết kế, phương pháp kiểm thử và kết quả.
+- [Bản đọc nhanh (PDF)](bao_cao/So_luoc_de_hieu_du_an.pdf) tóm tắt hệ thống và các điểm cần nắm khi bảo vệ.
+- [Nguồn LaTeX (ZIP)](bao_cao/Nguon_chinh_sua_mau_Tech.zip) có mã nguồn, ảnh và font. Giải nén, mở `main.tex` để cập nhật thông tin nhóm và biên dịch lại bằng XeLaTeX.
+
 ## Cấu trúc
 
 ```text
