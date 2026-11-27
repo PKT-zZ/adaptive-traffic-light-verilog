@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>KTMT Studio — Đèn giao thông thích ứng</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="lessons-core.js"></script>
+  <script defer src="lessons-evidence.js"></script>
+  <script defer src="lessons-defense.js"></script>
+  <script defer src="sources.js"></script>
+  <script defer src="model.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Bỏ qua điều hướng</a>
+  <header class="topbar">
+    <button id="menu" class="icon-btn mobile-menu" type="button" aria-label="Mở mục lục" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <a class="brand" href="#home" aria-label="KTMT Studio, Tổng quan">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>KTMT <strong>Studio</strong></span>
+    </a>
+    <div class="search-wrap">
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Tìm bài, tín hiệu, câu hỏi…" aria-label="Tìm học liệu" aria-controls="search-results" autocomplete="off"><kbd>/</kbd></label>
+      <div id="search-results" class="search-results" hidden></div>
+    </div>
+    <div class="top-actions">
+      <button id="theme" class="icon-btn" type="button" aria-label="Đổi giao diện" title="Đổi giao diện">☼</button>
+      <a class="button top-progress" href="#progress">Tiến độ</a>
+    </div>
+  </header>
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-label="Mục lục"></aside>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <div id="announce" class="sr-only" role="status"></div>
+  <noscript>Hãy bật JavaScript để dùng học liệu và mô phỏng cục bộ.</noscript>
+</body>
+</html>

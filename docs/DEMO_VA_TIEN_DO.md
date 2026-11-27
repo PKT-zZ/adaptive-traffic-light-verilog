@@ -1,4 +1,4 @@
-# Demo và báo cáo tiến độ
+# Demo và thuyết trình cuối kỳ
 
 ## Chuẩn bị trước buổi báo cáo
 
@@ -18,7 +18,22 @@
 - demo.vcd chứa toàn bộ tám lượt so sánh và thử ngẫu nhiên; các lượt so sánh xuất hiện theo thứ tự cân bằng cố định/thích ứng, A đông cố định/thích ứng, B đông cố định/thích ứng, đổi hướng cố định/thích ứng.
 - Để tìm chính xác một tình huống, xem các cột scenario, adaptive, second trong trace.csv rồi đối chiếu với state, active, button trên dạng sóng. File controller.vcd ngắn hơn, phù hợp minh họa chuyển pha và reset.
 
-## Nội dung trình bày khoảng 5 phút
+## Kế hoạch thuyết trình và bảo vệ
+
+Buổi bảo vệ có 50 phút. Nhóm dùng 20 slide và đặt mục tiêu chuyển sang hỏi đáp ở phút 38. [Kịch bản thuyết trình](KICH_BAN_THUYET_TRINH.md) có lời nói mẫu, thao tác theo từng slide và câu hỏi ôn tập chung.
+
+| Mốc | Người nói | Nội dung |
+|---|---|---|
+| 0:00–7:00 | Bạn 1 | Slide 1–5: bài toán, phạm vi, kiến trúc, vòng FSM |
+| 7:00–13:00 | Bạn 2 | Slide 6–8: hàng đợi, lấy mẫu, chính sách xanh |
+| 13:00–18:30 | Bạn 3 | Slide 9–11: clock, định thời và phép đo vàng/đỏ |
+| 18:30–25:30 | Bạn 4 | Slide 12–15: tích hợp, nút đi bộ và reset |
+| 25:30–38:00 | Bạn 5 | Slide 16–20: kiểm thử, demo, kết quả và bàn luận |
+| 38:00–50:00 | Cả nhóm | Hỏi đáp |
+
+Dùng ảnh tĩnh cho phép đo 135 → 165 → 175 ns ở slide 11. Hai ca GTKWave trực tiếp ở slide 17 dùng **build/controller.vcd**: đo xanh thích ứng 645 → 705 ns với A=0/B=10, sau đó đo nhánh WALK → CLEAR → B xanh tại 1435 → 1495 → 1505 ns. Mở sẵn cửa sổ và có ảnh tĩnh dự phòng. Ví dụ A=2/B=7 ở slide 8 dùng để giải thích quy tắc.
+
+## Demo rút gọn khoảng 5 phút
 
 ### Phạm vi và thiết kế khoảng 1 phút
 

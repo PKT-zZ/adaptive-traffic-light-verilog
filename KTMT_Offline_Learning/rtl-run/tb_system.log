@@ -1,0 +1,11 @@
+VCD info: dumpfile build/demo.vcd opened for output.
+PASS scenario=0 mode=0 served=213 queue_area=10252 final_queue=27
+PASS scenario=0 mode=1 served=161 queue_area=24792 final_queue=79
+PASS scenario=1 mode=0 served=167 queue_area=29008 final_queue=93
+PASS scenario=1 mode=1 served=219 queue_area=14754 final_queue=41
+PASS scenario=2 mode=0 served=167 queue_area=29621 final_queue=93
+PASS scenario=2 mode=1 served=218 queue_area=14847 final_queue=42
+PASS scenario=3 mode=0 served=173 queue_area=33264 final_queue=27
+PASS scenario=3 mode=1 served=200 queue_area=22009 final_queue=0
+PASS tb_system checks=80480 randomized_seconds=3000 seed=0x12345678
+sim/tb_system.sv:162: $finish called at 78520000 (1ps)

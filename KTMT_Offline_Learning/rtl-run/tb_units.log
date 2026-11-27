@@ -1,0 +1,2 @@
+PASS tb_units checks=13056
+sim/tb_units.sv:27: $finish called at 13056000 (1ps)

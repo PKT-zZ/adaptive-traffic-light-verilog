@@ -2,9 +2,17 @@
 
 Bản mô phỏng theo phạm vi **1A – 2B – 3B – 4A – 5A – 7B – 8A**: hai hướng đi thẳng, hàng đợi xe mô phỏng, điều khiển thích ứng, người đi bộ, đổi chế độ khi reset, kiểm thử tự động và dạng sóng GTKWave.
 
+## Chọn phần cần dùng
+
+| Mục đích | Bắt đầu ở đâu |
+|---|---|
+| **Chuẩn bị phần nộp** | [RTL](rtl/), [testbench và mô hình xe](sim/), [script chạy](scripts/), [báo cáo cuối kỳ](bao_cao/Bao_cao_KTMT_mau_Tech.pdf) và [bảng kết quả tham chiếu](docs/KET_QUA.md). |
+| **Chỉnh báo cáo và tập bảo vệ** | [ZIP nguồn LaTeX](bao_cao/Nguon_chinh_sua_mau_Tech.zip), [bản đọc nhanh](bao_cao/So_luoc_de_hieu_du_an.pdf), [kịch bản 38 phút](docs/KICH_BAN_THUYET_TRINH.md), [tra câu hỏi đến đúng dòng mã](docs/TRA_CUU_BAO_VE.md) và [hướng dẫn demo](docs/DEMO_VA_TIEN_DO.md). |
+| **Tự học và luyện câu hỏi** | [KTMT Studio](KTMT_Offline_Learning/README.md) có bài học, trình đọc mã, mô phỏng JavaScript, bài đọc dạng sóng và câu hỏi. Clone hoặc tải **cả repo**, giải nén nếu cần, rồi mở `KTMT_Offline_Learning/index.html` trên máy. |
+
 ## Chạy ngay trên máy hiện tại
 
-Mở thư mục `traffic_project` trong VS Code. Trong terminal PowerShell chạy:
+Mở thư mục gốc của repo `adaptive-traffic-light-verilog` trong VS Code. Trong terminal PowerShell chạy:
 
 ```powershell
 .\scripts\run.ps1
@@ -16,7 +24,7 @@ Mở thư mục `traffic_project` trong VS Code. Trong terminal PowerShell chạ
 .\scripts\run.ps1 -Wave
 ```
 
-Nếu terminal đang ở thư mục cha, dùng `cd .\traffic_project` trước. Khi Windows chặn script do execution policy, dùng lệnh dưới đây để áp dụng chính sách riêng cho tiến trình PowerShell mới:
+Nếu terminal đang ở thư mục cha, dùng `cd .\adaptive-traffic-light-verilog` trước. Khi Windows chặn script do execution policy, dùng lệnh dưới đây để áp dụng chính sách riêng cho tiến trình PowerShell mới:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\run.ps1 -Wave
@@ -40,12 +48,12 @@ Khi thành công, terminal in `Validated run published: <run-id>`. Xem `build/ru
 
 1. [Thiết kế và quy tắc chính xác](docs/THIET_KE.md).
 2. [Hướng dẫn hiểu code và phân công 5 người](docs/HIEU_CODE_VA_PHAN_CONG.md).
-3. [Cách demo và nội dung báo cáo tiến độ](docs/DEMO_VA_TIEN_DO.md).
+3. [Kịch bản lời nói cho 5 thành viên](docs/KICH_BAN_THUYET_TRINH.md) và [hướng dẫn demo](docs/DEMO_VA_TIEN_DO.md).
 4. [Kết quả kiểm thử đi kèm bộ nộp](docs/KET_QUA.md). Sau khi chạy lại, xem bảng mới trong `build/KET_QUA.md`.
 
 ## Báo cáo và chuẩn bị bảo vệ
 
-- [Báo cáo bài tập lớn (PDF)](bao_cao/Bao_cao_KTMT_mau_Tech.pdf) trình bày thiết kế, phương pháp kiểm thử và kết quả.
+- [Báo cáo cuối kỳ – bản rà soát (PDF)](bao_cao/Bao_cao_KTMT_mau_Tech.pdf) trình bày thiết kế, phương pháp kiểm thử và kết quả. Nhóm cần xác nhận thông tin bìa, thứ tự đóng góp và kế hoạch thực tế trước khi nộp.
 - [Bản đọc nhanh (PDF)](bao_cao/So_luoc_de_hieu_du_an.pdf) tóm tắt hệ thống và các điểm cần nắm khi bảo vệ.
 - [Nguồn LaTeX (ZIP)](bao_cao/Nguon_chinh_sua_mau_Tech.zip) có mã nguồn, ảnh và font. Giải nén, mở `main.tex` để cập nhật thông tin nhóm và biên dịch lại bằng XeLaTeX.
 
@@ -65,6 +73,7 @@ sim/tb_system.sv          Mô phỏng xe, so sánh hai chế độ, thử ngẫu
 scripts/run.ps1           Chạy toàn bộ bài kiểm thử
 scripts/report.py         Tạo lại bảng kết quả bằng Python tiêu chuẩn
 demo.gtkw                 Danh sách tín hiệu GTKWave
+KTMT_Offline_Learning/    Học liệu ngoại tuyến và dữ liệu mẫu tải từ website
 ```
 
 ## Giới hạn của bản này

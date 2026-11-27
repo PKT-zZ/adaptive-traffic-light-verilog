@@ -1,0 +1,8 @@
+VCD info: dumpfile build/controller.vcd opened for output.
+PASS fixed cycle and exact timing
+PASS asynchronous-to-tick request capture and pedestrian after A
+PASS adaptive minimum maximum and queue changes
+PASS held button and correct resume after B
+PASS reset in all nine states
+PASS tb_controller checks=2268
+sim/tb_controller.sv:102: $finish called at 4170000 (1ps)
